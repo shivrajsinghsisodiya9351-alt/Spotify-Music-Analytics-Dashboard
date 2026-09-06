@@ -1,144 +1,69 @@
+# 🎧 Spotify Music Analytics Dashboard | Power BI
 
-# 🎵 Spotify Music Analytics Dashboard
+![Home](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Home.png) ![Overview](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Overview.png) ![Artists](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Artist.png) ![Songs](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Artist.png)
 
-> A comprehensive Power BI dashboard analyzing Spotify music data — covering artists, songs, popularity trends, and album statistics.
+*(Pages: Home → Overview → Artists → Songs)*
 
----
+## 📌 Project Description
+An interactive Power BI dashboard built on Spotify streaming data covering **342 distinct artists** and **789 distinct songs**. The dashboard breaks down catalog composition, popularity trends, and release patterns across four dedicated pages — Home (navigation), Overview (KPI summary), Artists (artist-level performance), and Songs (song-level performance) — helping uncover which artists, albums, and song types drive the most engagement.
 
-## 📌 Table of Contents
-
-- [Overview](#overview)
-- [Pages](#pages)
-  - [🏠 Home](#-home)
-  - [📊 Overview](#-overview)
-  - [🎤 Artists](#-artists)
-  - [🎵 Songs](#-songs)
-- [Key Metrics](#key-metrics)
-- [Tech Stack](#tech-stack)
-
----
-
-## Overview
-
-This Power BI report provides deep insights into Spotify's music catalog. It covers 342 distinct artists, 789 distinct songs, and tracks popularity, duration, album type, and release trends across months and quarters.
-
----
-
-## Pages
-
----
-
-### 🏠 Home
-
-The **Home** page serves as the landing screen of the dashboard. It features the Spotify branding with a dark background and a collage of album covers on the right side. Navigation buttons — **Home**, **Overview**, **Artists**, and **Songs** — are prominently displayed for easy access to all sections.
-
-![Home Page](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Home.png
-)
-
----
-
-### 📊 Overview
-
-The **Overview** page gives a bird's-eye view of all key metrics in one place.
-
-**Highlights:**
-- **342** Distinct Artists
-- **789** Distinct Songs
-- **89.62** Average Popularity Score
-- Donut charts showing:
-  - Songs by Album Type (Singles: 269, Albums: 562)
-  - Songs by Year (2023: 423, 2024: 452)
-  - Explicit vs Non-Explicit Songs (Explicit: 11K, Non-Explicit: 17K)
-  - Avg. Popularity by Album Type
-- **Songs By Artist** bar chart (Taylor Swift leads with 85 songs)
-- **Artist By Popularity** bar chart (Taylor Swift: 164K total popularity)
-- **Average Popularity by Months** line chart
-- **Distinct Songs by Months** bar chart
-- Left sidebar with a scrollable **Song & Artist** list with album art
-- Featured album player widget (Taylor Swift – 1989)
-
-![Overview Page](Overview.png)
-
----
-
-### 🎤 Artists
-
-The **Artists** page focuses on artist-level analytics.
-
-**Charts included:**
-- **Artist By Songs** — Distinct songs count per artist (Taylor Swift: 85, Travis Scott: 30, Drake: 27...)
-- **Artist By Popularity** — Sum of popularity per artist (Taylor Swift: 164K, Billie Eilish: 80K, Sabrina Carpenter: 67K...)
-- **Artist By Album** — Album count per artist (Taylor Swift: 1854, The Weeknd: 663, Billie Eilish: 631...)
-
-**Data Table** includes:
-| Column | Description |
-|--------|-------------|
-| Artist | Artist name |
-| Album Type | Album or Single |
-| Album Count | Number of albums/singles |
-| Avg. Duration (Minutes) | Average song length |
-| Average Popularity | Mean popularity score |
-| Newest Song Release Date | Most recent release |
-
-![Artists Page](Artist.png)
-
----
-
-### 🎵 Songs
-
-The **Songs** page provides song-level deep dives.
-
-**Charts included:**
-- **Songs By Artist** — Number of songs per artist
-- **Songs By Popularity** — Top songs by total popularity (I Wan... 51K, Cruel... 50K, As It Was: 35K...)
-- **Songs By Position** — Sum of chart position per song
-
-**Data Table** includes:
-| Column | Description |
-|--------|-------------|
-| Song | Song title |
-| Album Type | Album or Single |
-| Album Count | Appearances across albums |
-| Avg. Duration (Minutes) | Song length |
-| Average Popularity | Popularity score |
-| Newest Song Release Date | Latest release date |
-
-![Songs Page](Songs.png)
-
----
-
-## Key Metrics
-
-| Metric | Value |
-|--------|-------|
-| Total Distinct Artists | 342 |
-| Total Distinct Songs | 789 |
+## 📊 Key KPIs
+| KPI | Value |
+|---|---|
+| Distinct Artists | 342 |
+| Distinct Songs | 789 |
 | Average Popularity | 89.62 |
-| Top Artist (by Songs) | Taylor Swift (85 songs) |
-| Top Artist (by Popularity) | Taylor Swift (164K) |
-| Most Albums | Taylor Swift (1854) |
-| Songs Released in 2024 | 452 |
-| Songs Released in 2023 | 423 |
+| Popularity Trend (YoY) | 89.62 |
 
----
+## ⚙️ Process
+- **Data Collection** – Sourced raw song/artist/album metadata (song name, artist, album type, duration, popularity, release date) in a Spotify-style dataset.
+- **Data Preparation** – Structured song, artist, and album fields into analysis-ready tables; standardized date and duration formats.
+- **Data Cleaning** – Handled missing/duplicate song-album entries, corrected explicit-content flags, and validated popularity score ranges.
+- **Data Modeling** – Built relationships between Songs, Artists, and Albums; created DAX measures for distinct counts, sum of popularity, and average duration.
+- **Dashboard Development** – Designed 4 pages (Home, Overview, Artists, Songs) with KPI cards, bar/donut/line charts, and a song/artist selector panel with album art.
+- **Testing & Deployment** – Validated cross-filtering between pages, checked slicer interactions (song ↔ artist), and published the final `.pbix`.
 
-## Tech Stack
+## ❓ Business Questions Answered
+- Which artists have released the most distinct songs, and which are the most popular by total popularity score?
+- How does album count and average popularity compare across top artists (e.g., Taylor Swift vs. Billie Eilish vs. Drake)?
+- What share of the catalog is singles vs. albums, and explicit vs. non-explicit content?
+- How does average song popularity vary month-to-month or by quarter?
+- Which specific songs/albums have the highest average duration, popularity, and most recent release dates?
 
-- **Visualization Tool:** Microsoft Power BI
-- **Data Source:** Spotify Dataset
-- **Design Theme:** Dark mode with Spotify green accents (`#1DB954`)
+## 🔎 Observations and Data Highlights
+- **Taylor Swift** leads by a wide margin — highest distinct song count (85), highest album count (1,854), and highest cumulative popularity (164K).
+- Singles (269) are outnumbered by albums (562) in the catalog, yet singles tend to post higher average popularity per release.
+- **Non-explicit songs (17K)** outweigh explicit songs (11K), indicating the catalog skews toward broader-audience content.
+- Release volume is fairly balanced across years — 423 songs in 2023 vs. 452 in 2024.
+- Average popularity by month shows a dip mid-year (around Feb–Mar and Jul–Aug) and peaks near May and Oct–Nov, suggesting seasonal listening/release patterns.
 
----
+## 📈 Visuals and Analytics Used
+- KPI Cards – Distinct Artists, Distinct Songs, Average Popularity, Popularity Trend
+- Horizontal Bar Charts – Songs by Artist, Artist by Popularity, Artist by Album Count, Songs by Popularity
+- Donut Charts – Distinct Songs by Album Type, Explicit vs. Non-Explicit, Songs by Year, Average Popularity by Album Type
+- Line Chart with Toggle – Average Popularity by Month/Quarter
+- Column Chart – Distinct Songs by Month
+- Detail Tables – Song-level and Artist-level metrics (Album Count, Avg Duration, Avg Popularity, Newest Release Date)
+- Interactive Song/Artist Selector Panel with album artwork and a mock playback control
+- Page Navigation Buttons (Home, Overview, Artists, Songs)
 
-## 📁 Dashboard Screenshots
+## 💡 Actionable Insights
+- A small set of top artists (Taylor Swift, Billie Eilish, Sabrina Carpenter) contribute a disproportionate share of total popularity — prioritizing these for playlist placement can maximize engagement.
+- Singles show stronger average popularity efficiency than albums — a single-first release strategy may outperform full-album drops for building traction.
+- The dominance of non-explicit content suggests curated playlists targeting broader/family audiences have a larger catalog to draw from.
+- Monthly popularity dips point to specific low-engagement windows — release timing could be shifted to avoid these troughs.
 
-| Page | Preview |
-|------|---------|
-| Home | ![](Home.png) |
-| Overview | ![](Overview.png) |
-| Artists | ![](Artist.png) |
-| Songs | ![](Songs.png) |
+## 🎯 Expected Outcomes
+- Faster identification of top-performing artists and songs for marketing/playlist decisions.
+- Clear visibility into catalog composition (singles vs. albums, explicit vs. non-explicit) to guide content strategy.
+- A reusable template for tracking song/artist popularity trends over time as new data is added.
 
----
+## ✅ Conclusion
+This dashboard turns raw song and artist metadata into a decision-ready view of catalog performance — highlighting which artists and release types drive popularity, how explicit content splits the catalog, and how engagement shifts across the year. It's built to scale with new data drops and support both marketing and content-strategy decisions.
 
-> **Note:** To view the live dashboard, open the `.pbix` file in Power BI Desktop.
+## 📬 Contact Me
+- Portfolio: [datascienceportfol.io/shivraj](https://datascienceportfol.io/shivraj)
+- GitHub: [github.com/shivrajsinghsisodiya9351-alt](https://github.com/shivrajsinghsisodiya9351-alt)
+
+## 📥 More Details
+Want to explore the full model, DAX measures, and interactions yourself? Download the `.pbix` file from the GitHub repo above and open it in Power BI Desktop.
