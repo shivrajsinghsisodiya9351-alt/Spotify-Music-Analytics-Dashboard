@@ -1,6 +1,6 @@
 # 🎧 Spotify Music Analytics Dashboard | Power BI
 
-![Home](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Home.png) ![Overview](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Overview.png) ![Artists](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Artist.png) ![Songs]()
+![Home](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Home.png) ![Overview](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Overview.png) ![Artists](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Artist.png) ![Songs](https://github.com/shivrajsinghsisodiya9351-alt/Spotify-Music-Analytics-Dashboard/blob/main/Songs.png)
 
 *(Pages: Home → Overview → Artists → Songs)*
 
